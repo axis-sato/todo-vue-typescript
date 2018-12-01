@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <header>
-      <h1>Vue + Typescript Todo</h1>
-    </header>
-    <router-view/>
+    <header><h1>Vue + Typescript Todo</h1></header>
+    <router-view />
   </div>
 </template>
 

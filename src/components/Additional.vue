@@ -4,7 +4,6 @@
       <div class="modal-mask">
         <div class="modal-wrapper">
           <div class="modal-container">
-
             <ul class="error" v-if="errors.length">
               <li v-for="error in errors" :key="error">{{ error }}</li>
             </ul>
@@ -12,8 +11,7 @@
             <div class="modal-header">
               <slot name="header">
                 <label>
-                  title
-                  <input v-model="title" name="title" type="text">
+                  title <input v-model="title" name="title" type="text" />
                 </label>
                 <!--default header-->
               </slot>
@@ -22,20 +20,15 @@
             <div class="modal-body">
               <slot name="body">
                 <label>
-                  detail:
-                  <input v-model="detail" name="detail" type="text">
+                  detail: <input v-model="detail" name="detail" type="text" />
                 </label>
               </slot>
             </div>
 
             <div class="modal-footer">
               <slot name="footer">
-                <button @click="onAdd">
-                  OK
-                </button>
-                <button @click="$emit('close')">
-                  cancel
-                </button>
+                <button @click="onAdd">OK</button>
+                <button @click="$emit('close')">cancel</button>
               </slot>
             </div>
           </div>

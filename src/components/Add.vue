@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <button @click="$emit('add')">add</button>
-  </div>
+  <div><button @click="$emit('add')">add</button></div>
 </template>
 
 <script lang="ts">

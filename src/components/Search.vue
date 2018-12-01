@@ -1,7 +1,7 @@
 <template>
   <div>
     <label>
-      <input :value="title" @input="onChangeSearch" name="search" type="text">
+      <input :value="title" @input="onChangeSearch" name="search" type="text" />
     </label>
   </div>
 </template>

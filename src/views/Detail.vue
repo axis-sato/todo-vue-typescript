@@ -5,9 +5,7 @@
       {{ todo.detail }}
     </div>
 
-    <router-link to="/">
-      戻る
-    </router-link>
+    <router-link to="/"> 戻る </router-link>
   </div>
 </template>
 

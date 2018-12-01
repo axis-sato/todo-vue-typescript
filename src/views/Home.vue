@@ -6,7 +6,11 @@
       <TodoComponent :todo="todo" @done="doneTodo" @delete="deleteTodo" />
     </div>
 
-    <Additional v-if="showAdditional" @add="addTodo" @close="showAdditional = false" />
+    <Additional
+      v-if="showAdditional"
+      @add="addTodo"
+      @close="showAdditional = false"
+    />
   </div>
 </template>
 

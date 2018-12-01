@@ -1,12 +1,17 @@
 <template>
   <div>
     <label>
-      <input name="done" type="checkbox" :checked="todo.done" @change="onChangeDone" >
+      <input
+        name="done"
+        type="checkbox"
+        :checked="todo.done"
+        @change="onChangeDone"
+      />
     </label>
     <span v-bind:class="{ done: todo.done }">
-    <router-link :to="{ name: 'detail', params: { id: todo.id } }">
-      {{ todo.title }}
-    </router-link>
+      <router-link :to="{ name: 'detail', params: { id: todo.id } }">
+        {{ todo.title }}
+      </router-link>
     </span>
     <button @click="onDelete">delete</button>
   </div>
